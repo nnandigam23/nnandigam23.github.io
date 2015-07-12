@@ -183,6 +183,12 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#colophon" data-toggle="modal">Colophon</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
@@ -234,16 +240,16 @@
                             <!-- Project Details Go Here -->
                             <h2>Experience Project</h2>
                             <p class="item-intro text-muted">My experiences with Experience Project</p>
-                            <div id="pdf">
+                            <a href="docs/ExperienceProject.pdf" target="_blank">
+                                <button type="submit" class="btn btn-primary">Open in separate tab <i class="fa fa-sign-out"></i></button>
+                            </a>
+                            <br>
+                            <br>
+                            <div class="desktop-div" id="pdf">
                                 <object data="/docs/ExperienceProject.pdf" type="application/pdf" width="100%" height="100%">
-
-                                    <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="/docs/ExperienceProject.pdf">click here to download the PDF file.</a></p>
 
                                 </object>
                             </div>
-                            <a href="docs/ExperienceProject.pdf" target="_blank">
-                                <p style="text-align:right">Open in separate tab <i class="fa fa-sign-out"></i></p>
-                            </a>
                             <br>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Blog</button>
                         </div>
@@ -269,16 +275,16 @@
                             <!-- Project Details Go Here -->
                             <h2>Twitter: The Shared Experience</h2>
                             <p class="item-intro text-muted">A Case Study on Twitter</p>
-                            <div id="pdf">
+                            <a href="docs/TwitterCaseStudy.pdf" target="_blank">
+                                <button type="submit" class="btn btn-primary">Open in separate tab <i class="fa fa-sign-out"></i></button>
+                            </a>
+                            <br>
+                            <br>
+                            <div class="desktop-div" id="pdf">
                                 <object data="/docs/TwitterCaseStudy.pdf" type="application/pdf" width="100%" height="100%">
-
-                                    <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="/docs/TwitterCaseStudy.pdf">click here to download the PDF file.</a></p>
 
                                 </object>
                             </div>
-                            <a href="docs/TwitterCaseStudy.pdf" target="_blank">
-                                <p style="text-align:right">Open in separate tab <i class="fa fa-sign-out"></i></p>
-                            </a>
                             <br>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Blog</button>
                         </div>
@@ -360,7 +366,31 @@
         </div>
     </div>
 
+     <!-- colophon -->
+    <div class="modal" id="colophon" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body" style="text-align:center">
+                            <!-- Project Details Go Here -->
+                            <h2>Colophon</h2>
+                            <p>This website was made using the <a href="http://startbootstrap.com/template-overviews/agency/">Agency theme</a>. The galley was made using open-source code from <a href="http://www.jssor.com/">Jssor Slider</a>. I highly suggest visiting these sites for themes and modules to embed into your code. If you believe that I have used your code/content and have not cited you, feel free to contact me and I will make the appropriate changes.</p>
+                            <br>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Colophon</button>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
