@@ -81,11 +81,13 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="intro-text">
+            <div class="row">
+                <div class="intro-text">
                 <div class="intro-lead-in" style="font-style: italic; margin-bottom: 15px">Nishal Nandigam's wandering thoughts</div>
                 <div class="intro-heading">Prototype</div>
 
                 <a href="#team" class="page-scroll btn btn-xl">Explore <i class="fa fa-angle-double-down"></i></a>
+            </div>
             </div>
         </div>
     </header>
@@ -196,7 +198,7 @@
                         <img src="img/portfolio/GameOfThrones_preview.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Game Of Thrones - Ned Stark</h4>
+                        <h4>Game Of Thrones</h4>
                         <p class="text-muted">Drawing</p>
                     </div>
                 </div>
@@ -578,6 +580,12 @@
     </section>
     <!------------------------------------------------------------>
 
+    <script>
+        $(function() {
+            $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+        });
+
+    </script>
 
     <!-- Contact Section -->
     <section id="contact">
@@ -680,8 +688,6 @@
 
                             <ul class="list-inline">
                                 <li><strong>Date:</strong> July 14 2015</li>
-
-                                <li><strong>Category:</strong> Drawing</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
@@ -884,7 +890,7 @@
                                 <p>Obviously you will fill in your own user name instead of 'nnandigam23'. You can initialize the repository with a README file, if you want. Click "Create repository".</p>
                                 <p>Now you should consider where you want your HTML, CSS, JS, etc. to be located. You will push these files from their location to Github. You can either have the files located locally on your computer, or store them on a cloud platform. For example, I keep all my web files on <a href="https://www.dropbox.com/home">Dropbox</a>. That way my website is not tied to my computer, instead it exists on the cloud. This could be useful if I were to lose my computer, or something happened to my hard drive. However, you are betting that Dropbox doesn't lose your files too. I recommend using a cloud-based storage application and keeping a recent copy of your work on a local machine as backup.</p>
                                 <h4>Using Git</h4>
-                                <p>Now we're going to use Git from the terminal to push your files to Github. Before that you'll want to copy the url of your repository to your clipboard. Other than copying the address from the top bar, there is a button under "<strong>HTTPS</strong> clone URL" on the right of the page that copies the url to your clipboard. So go ahead and launch your terminal (or powershell, if you're on Windows). eavigate to the folder where your web files are located. If you are new to the terminal, typing <code>ls</code> will display all the files and folders contained within the folder you are currently in. Typing <code>cd Folder</code> will get you to the folder specified (the folder has to be contained by the folder where you were previously). The command <code>cd ..</code> will get you up one folder. So once you're at the correct folder, enter the command:</p>
+                                <p>Now we're going to use Git from the terminal to push your files to Github. Before that you'll want to copy the url of your repository to your clipboard. Other than copying the address from the top bar, there is a button under "<strong>HTTPS</strong> clone URL" on the right of the page that copies the url to your clipboard. So go ahead and launch your terminal (or powershell, if you're on Windows). Navigate to the folder where your web files are located. If you are new to the terminal, typing <code>ls</code> will display all the files and folders contained within the folder you are currently in. Typing <code>cd Folder</code> will get you to the folder specified (the folder has to be contained by the folder where you were previously). The command <code>cd ..</code> will get you up one folder. So once you're at the correct folder, enter the command:</p>
                                 <pre>git clone https://github.com/nnandigam23/nnandigam23.github.io</pre>
                                 <p>You'll want to insert that link that you copied where I have my url in the command. Now you should have a folder name 'username.github.io' where all your files are. In your Finder (or Windows Explorer), go ahead and move all those files into this new folder. Now in the terminal go to this new folder:</p>
                                 <pre>cd username.github.io</pre>
@@ -892,7 +898,7 @@
                                 <pre>git add *</pre>
                                 <p>This command readies all your changed files (in this case, new files) for deployment to GitHub. If you only want to add a single file, simply change the <code>git add *</code> to <code>git add file.name</code>. Next, you have to commit these changes. This is where you can type a message explaining the changes you have made during this particular upload. This is helpful when you are looking back on all the past versions of your code, and you want to know what changes were made:</p>
                                 <pre>git commit -m "blah blah blah"</pre>
-                                <p>You can enter your message in the between the quotation marks. So now we can push our code to the repository. To do this, type:</p>
+                                <p>You can enter your message in between the quotation marks. So now we can push our code to the repository. To do this, type:</p>
                                 <pre>git push origin master</pre>
                                 <p>Once you enter this, you should be prompted for your username and password. Enter these in, and you should be good to go!Wait for the success message to display, and go check your repository to see your newly-added files.</p>
                                 <img class="img-responsive img-centered" src="img/gallery/GithubTutorial/repository.png" alt="">
@@ -955,7 +961,6 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
