@@ -68,9 +68,6 @@
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#blog">Blog</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -274,356 +271,66 @@
                         <p class="text-muted">Graphic Design</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <br>
-                    <a href="portfolio.html">
-                        <button type="submit" class="btn btn-xl">See More <i class="fa fa-chevron-circle-right"></i></button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-------------------------------------------------------------->
-    <!-- Blog Section -->
-    <section id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Blog</h2>
-                    <h3 class="section-subheading text-muted">Thoughts. Experiences. News. You know the idea.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <style>
-                    .captionOrange,
-                    .captionBlack {
-                        color: #fff;
-                        font-size: 20px;
-                        line-height: 30px;
-                        text-align: center;
-                        border-radius: 4px;
-                    }
-                    
-                    .captionOrange {
-                        background: #EB5100;
-                        background-color: rgba(235, 81, 0, 0.6);
-                    }
-                    
-                    .captionBlack {
-                        font-size: 16px;
-                        background: #000;
-                        background-color: rgba(0, 0, 0, 0.4);
-                    }
-                    
-                    a.captionOrange,
-                    A.captionOrange:active,
-                    A.captionOrange:visited {
-                        color: #ffffff;
-                        text-decoration: none;
-                    }
-                    
-                    a.captionOrange:hover {
-                        color: #eb5100;
-                        text-decoration: underline;
-                        background-color: #eeeeee;
-                        background-color: rgba(238, 238, 238, 0.7);
-                    }
-                    
-                    .bricon {
-                        background: url(/img/browser-icons.png);
-                    }
-
-                </style>
-                <!-- it works the same with all jquery version from 1.x to 2.x -->
-                <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
-                <!-- use jssor.slider.mini.js (40KB) instead for release -->
-                <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
-                <script type="text/javascript" src="/js/jssor.js"></script>
-                <script type="text/javascript" src="/js/jssor.slider.js"></script>
-                <script>
-                    jQuery(document).ready(function($) {
-                        //Reference http://www.jssor.com/development/slider-with-slideshow-jquery.html
-                        //Reference http://www.jssor.com/development/tool-slideshow-transition-viewer.html
-
-                        var _SlideshowTransitions = [
-                            //Fade in R
-                            {
-                                $Duration: 1200,
-                                x: -0.3,
-                                $During: {
-                                    $Left: [0.3, 0.7]
-                                },
-                                $Easing: {
-                                    $Left: $JssorEasing$.$EaseInCubic,
-                                    $Opacity: $JssorEasing$.$EaseLinear
-                                },
-                                $Opacity: 2
-                            }
-                            //Fade out L
-                            , {
-                                $Duration: 1200,
-                                x: 0.3,
-                                $SlideOut: true,
-                                $Easing: {
-                                    $Left: $JssorEasing$.$EaseInCubic,
-                                    $Opacity: $JssorEasing$.$EaseLinear
-                                },
-                                $Opacity: 2
-                            }
-                        ];
-
-                        var options = {
-                            $AutoPlay: true, //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                            $AutoPlaySteps: 1, //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-                            $AutoPlayInterval: 4000, //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-                            $PauseOnHover: 1, //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-
-                            $ArrowKeyNavigation: true, //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-                            $SlideDuration: 1200, //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-                            $MinDragOffsetToSlide: 20, //[Optional] Minimum drag offset to trigger slide , default value is 20
-                            //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-                            //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-                            $SlideSpacing: 0, //[Optional] Space between each slide in pixels, default value is 0
-                            $DisplayPieces: 1, //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-                            $ParkingPosition: 0, //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-                            $UISearchMode: 1, //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-                            $PlayOrientation: 1, //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-                            $DragOrientation: 1, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-
-                            $SlideshowOptions: { //[Optional] Options to specify and enable slideshow or not
-                                $Class: $JssorSlideshowRunner$, //[Required] Class to create instance of slideshow
-                                $Transitions: _SlideshowTransitions, //[Required] An array of slideshow transitions to play slideshow
-                                $TransitionsOrder: 1, //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
-                                $ShowLink: true //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
-                            },
-
-                            $BulletNavigatorOptions: { //[Optional] Options to specify and enable navigator or not
-                                $Class: $JssorBulletNavigator$, //[Required] Class to create navigator instance
-                                $ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
-                                $Lanes: 1, //[Optional] Specify lanes to arrange items, default value is 1
-                                $SpacingX: 10, //[Optional] Horizontal space between each item in pixel, default value is 0
-                                $SpacingY: 10 //[Optional] Vertical space between each item in pixel, default value is 0
-                            },
-
-                            $ArrowNavigatorOptions: {
-                                $Class: $JssorArrowNavigator$, //[Requried] Class to create arrow navigator instance
-                                $ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
-                                $AutoCenter: 2 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                            },
-
-                            $ThumbnailNavigatorOptions: {
-                                $Class: $JssorThumbnailNavigator$, //[Required] Class to create thumbnail navigator instance
-                                $ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
-                                $ActionMode: 0, //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
-                                $DisableDrag: true //[Optional] Disable drag or not, default value is false
-                            }
-                        };
-
-                        var jssor_sliderb = new $JssorSlider$("sliderb_container", options);
-                        //responsive code begin
-                        //you can remove responsive code if you don't want the slider scales while window resizes
-                        function ScaleSlider() {
-                            var parentWidth = jssor_sliderb.$Elmt.parentNode.clientWidth;
-                            if (parentWidth)
-                                jssor_sliderb.$ScaleWidth(Math.min(parentWidth, 800));
-                            else
-                                window.setTimeout(ScaleSlider, 30);
-                        }
-                        ScaleSlider();
-
-                        $(window).bind("load", ScaleSlider);
-                        $(window).bind("resize", ScaleSlider);
-                        $(window).bind("orientationchange", ScaleSlider);
-                        //responsive code end
-                    });
-
-                </script>
-                <!-- Jssor Slider Begin -->
-                <!-- To move inline styles to css file/block, please specify a class name for each element. -->
-                <div id="sliderb_container" style="position: relative;margin-right: auto; margin-left: auto; width: 800px;
-        height: 500px; overflow: hidden; text-align: left;">
-
-                    <!-- Loading Screen -->
-                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
-                        </div>
-                        <div style="position: absolute; display: block; background: url(/img/loading.gif) no-repeat center center;
-                top: 0px; left: 0px;width: 100%;height:100%;">
-                        </div>
-                    </div>
-
-                    <!-- Slides Container -->
-                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 500px;
-            overflow: hidden;">
-                        <div>
-                            <a href="#galleryModal1" class="portfolio-link" data-toggle="modal"><img u=image src="/img/gallery/ADayWithTech.jpg" /></a>
-                            <div u="thumb">A post-apocalyptic short story</div>
-                        </div>
-                        <div>
-                            <a href="#galleryModal4" class="portfolio-link" data-toggle="modal"><img u=image src="/img/gallery/github_web_preview.png" /></a>
-                            <div u="thumb">Tutorial For Hosting Website on GitHub</div>
-                        </div>
-                        <div>
-                            <a href="#galleryModal2" class="portfolio-link" data-toggle="modal"><img u=image src="/img/gallery/EP_preview.jpg" /></a>
-                            <div u="thumb">My experiences with Experience Project</div>
-                        </div>
-                        <div>
-                            <a href="#galleryModal3" class="portfolio-link" data-toggle="modal"><img u=image src="/img/gallery/TwitterCS_preview.jpg" /></a>
-                            <div u="thumb">Twitter Case Study</div>
-                        </div>
-                    </div>
-
-                    <!--#region Thumbnail Navigator Skin Begin -->
-                    <!-- Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html -->
-                    <!-- thumbnail navigator container -->
-                    <!-- Help: http://www.jssor.com/development/slider-with-thumbnail-navigator-jquery.html -->
-                    <div u="thumbnavigator" style="position: absolute; bottom: 0px; left: 0px; height:45px; width:800px;">
-                        <div style="filter: alpha(opacity=40); opacity:0.4; position: absolute; display: block;
-                background-color: #000000; top: 0px; left: 0px; width: 100%; height: 100%;">
-                        </div>
-                        <!-- Thumbnail Item Skin Begin -->
-                        <div u="slides">
-                            <div u="prototype" style="POSITION: absolute; WIDTH: 800px; HEIGHT: 45px; TOP: 0; LEFT: 0;">
-                                <div u="thumbnailtemplate" style="font-family: montserrat; font-weight: normal; POSITION: absolute; WIDTH: 100%; HEIGHT: 100%; TOP: 0; LEFT: 0; color:#fff; line-height: 45px; font-size:20px; padding-left:10px;"></div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <!-- Thumbnail Item Skin End -->
-                    </div>
-                    <!--#endregion ThumbnailNavigator Skin End -->
-
-                    <!--#region Bullet Navigator Skin Begin -->
-                    <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
-                    <style>
-                        /* jssor slider bullet navigator skin 01 css */
-                        /*
-            .jssorb01 div           (normal)
-            .jssorb01 div:hover     (normal mouseover)
-            .jssorb01 .av           (active)
-            .jssorb01 .av:hover     (active mouseover)
-            .jssorb01 .dn           (mousedown)
-            */
-                        
-                        .jssorb01 {
-                            position: absolute;
-                        }
-                        
-                        .jssorb01 div,
-                        .jssorb01 div:hover,
-                        .jssorb01 .av {
-                            position: absolute;
-                            /* size of bullet elment */
-                            width: 12px;
-                            height: 12px;
-                            filter: alpha(opacity=70);
-                            opacity: .7;
-                            overflow: hidden;
-                            cursor: pointer;
-                            border: #000 1px solid;
-                        }
-                        
-                        .jssorb01 div {
-                            background-color: gray;
-                        }
-                        
-                        .jssorb01 div:hover,
-                        .jssorb01 .av:hover {
-                            background-color: #d3d3d3;
-                        }
-                        
-                        .jssorb01 .av {
-                            background-color: #fff;
-                        }
-                        
-                        .jssorb01 .dn,
-                        .jssorb01 .dn:hover {
-                            background-color: #555555;
-                        }
-
-                    </style>
-                    <!-- bullet navigator container -->
-                    <div u="navigator" class="jssorb01" style="bottom: 16px; right: 10px;">
-                        <!-- bullet navigator item prototype -->
-                        <div u="prototype"></div>
-                    </div>
-                    <!--#endregion Bullet Navigator Skin End -->
-
-                    <!--#region Arrow Navigator Skin Begin -->
-                    <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
-                    <style>
-                        /* jssor slider arrow navigator skin 05 css */
-                        /*
-            .jssora05l                  (normal)
-            .jssora05r                  (normal)
-            .jssora05l:hover            (normal mouseover)
-            .jssora05r:hover            (normal mouseover)
-            .jssora05l.jssora05ldn      (mousedown)
-            .jssora05r.jssora05rdn      (mousedown)
-            */
-                        
-                        .jssora05l,
-                        .jssora05r {
-                            display: block;
-                            position: absolute;
-                            /* size of arrow element */
-                            width: 40px;
-                            height: 40px;
-                            cursor: pointer;
-                            background: url(/img/a17.png) no-repeat;
-                            overflow: hidden;
-                        }
-                        
-                        .jssora05l {
-                            background-position: -10px -40px;
-                        }
-                        
-                        .jssora05r {
-                            background-position: -70px -40px;
-                        }
-                        
-                        .jssora05l:hover {
-                            background-position: -130px -40px;
-                        }
-                        
-                        .jssora05r:hover {
-                            background-position: -190px -40px;
-                        }
-                        
-                        .jssora05l.jssora05ldn {
-                            background-position: -250px -40px;
-                        }
-                        
-                        .jssora05r.jssora05rdn {
-                            background-position: -310px -40px;
-                        }
-
-                    </style>
-                    <!-- Arrow Left -->
-                    <span u="arrowleft" class="jssora05l" style="top: 123px; left: 8px;">
-        </span>
-                    <!-- Arrow Right -->
-                    <span u="arrowright" class="jssora05r" style="top: 123px; right: 8px;">
-        </span>
-                    <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
-                    <!-- Trigger -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <br>
-                    <br>
-                    <a href="blog.html">
-                        <button type="submit" class="btn btn-xl">Read More <i class="fa fa-chevron-circle-right"></i></button>
+                        <img src="img/portfolio/rent_preview.png" class="img-responsive" alt="">
                     </a>
+                    <div class="portfolio-caption">
+                        <h4>Rent Tap</h4>
+                        <p class="text-muted">User Interface Prototype</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/EP_preview.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Experience Project Reaction</h4>
+                        <p class="text-muted">Case Study</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/github_web_preview.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Github Pages</h4>
+                        <p class="text-muted">Tutorial</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/TwitterCS_preview.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Twitter Analysis</h4>
+                        <p class="text-muted">Case Study</p>
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
-    <!------------------------------------------------------------>
-
+    
     <script>
         $(function() {
             $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
@@ -876,38 +583,10 @@
         </div>
     </div>
 
-    <!-- gallery modal 1 -->
-    <div class="portfolio-modal modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>A Day with Technology</h2>
-                            <p class="item-intro text-muted">A post-apocalyptic short story.</p>
-                            <p>My alarm goes off. I wave my hand to silence the ringing noise and I hesitantly get up from bed. As I sit up, holograms displaying the weather, news stories, my calendar, and my social media notifications appear in my bedroom. As I move through my morning tasks, these holograms follow me through my house. With a quick shutter sound, the operating system in the house takes a picture of me, captioning it “Monday morning selfie,” and shares it to my favorites list. Before leaving the house, I take my contacts out of their charging case and slip them on. After a few blinks, the same OS in my house transfers onto my contacts. As I scroll through my messages, a red alert pops up on the right corner of my eye—I’m late for work.</p>
-                            <p>I hop into my self-driving car, and set the location to my office downtown. My car chooses to take the shortest route to work, through the slums. I’d rather go through the country side, where the sights are a little more pleasant—but the car knows best. As we pass through the slums, hordes of the homeless are scattered about. Unemployment has taken a drastic jump in the past five years, leaving many people homeless—even some friends that I used to have. But they made the mistake of trying to get a career in medicine or finance. There isn’t much need for those jobs anymore—the robots can do that by themselves. So basically the only successful jobs left are the engineers and the artists—things that not everyone can do. I’m fortunate however, my parents pushed me to study computer science, and guess what—I’m surviving. Although it may not be the most interesting job in the world, it allows me to live a decent lifestyle, unlike the poor guys outside my window. Well, they should have saw this coming.</p>
-                            <p>My car transports me to the Class B parking lot. I grab my Virus-Containment Mask and step out of the car. Because Class B is technically in the outskirts of the slums, certain precautions were needed. The homeless have been eaten alive by thriving viruses. The government refuses to give them the pills that we take regularly. We joke that it’s for population control. But I guess I shouldn’t be talking—I’m only in Class B. Not even good enough to get a parking lot in a quarantine zone. There are homeless clinging on to the fence surrounding the parking lot. Seeing me, they start begging for food and medicine—the usual. I turn the other way, and start walking towards my office building. A homeless man follows me on the other side of the fence continuing his pleading. I ignore him and focus on getting to work on time. I glance over and he is still there. How long will he follow? As I approach the building, the doors scan the ID on contacts and the doors open. Taking my mask off, I look behind at the homeless man. As the man furiously shakes the fence, a security bot approaches him. Damn it, he should’ve left when he had the chance. The bot issued the normal command and proceeded to shoot the man. It’s become a regular event. You’d think with all the advances in artificial intelligence, they would’ve installed some compassion into the security bots. But hey, as long as they’re not targeting me, I’m fine with it.</p>
-                            <p>Finally I get to my office and put my things on my desk. As I get some coffee from the kitchen I am alerted that I am getting fined due to my untimely attendance. The fines are piling up these days—I wonder if I’m actually making any money. Sighing, I sit down on my chair and get to work. My job consists of monitoring the processes of the social media website, TruLife. Well I guess I don’t monitor the processes, the computers do—I'm here "just in case." TruLife is a platform for users to share info and “connect.” Many of the users are just bots with artificial intelligence, and sometimes it’s really hard to tell. One of my friends had an intimate conversation with "Lucy Jane," only to find out that she was a bot. We gave him a tough time about that one. I open TruLife on my contacts and browse through my newsfeed. Luckily, since I’m a TruLife employee, the site is not blocked for me. They think I’m working. Too bad ESPN is blocked from the workplace, I need to see the highlights for the Bot Fight that I missed last night.</p>
-                            <p>It’s 6 PM and I am alerted that my shift is over. Eleven hours of staring at a computer—not one problem. Some people call this a good day. I call it a boring one. The more interesting days are when I actually have something to do, a problem to debug. But, I guess I shouldn’t be complaining. As I leave the office, I see the limp body of the homeless man outside the fence. Surprising that the cleanup bots haven’t gotten rid of the body yet. Maybe a malfunction? I step into my car and head home. I pass the thousands of homeless stuck in the cold weather and eventually arrive at my house. I remove my contacts and slip into bed, and drift off to sleep.</p>
-                            <p>My alarm goes off. I wave my hand to silence the ringing noise and I hesitantly get up from bed…</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Blog</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
-    <!-- Gallery Modal 2 -->
-    <div class="portfolio-modal modal fade" id="galleryModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Gallery Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -941,8 +620,8 @@
         </div>
     </div>
 
-    <!-- Gallery Modal 3 -->
-    <div class="portfolio-modal modal fade" id="galleryModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Gallery Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -968,7 +647,7 @@
                                 </object>
                             </div>
                             <br>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Blog</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -976,8 +655,8 @@
         </div>
     </div>
 
-    <!-- Gallery Modal 4 -->
-    <div class="portfolio-modal modal fade" id="galleryModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Gallery Modal 9 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -1012,9 +691,9 @@
                                     <br>
                                 </p>
                                 <h4>Let's start.</h4>
-                                <img class="img-responsive img-centered" src="img/gallery/GithubTutorial/Github_sc.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/GithubTutorial/Github_sc.png" alt="">
                                 <p>First step is to get a <a href="https://github.com/">GitHub account</a>. Then you'll want to create a new repository and title it as such:</p>
-                                <img class="img-responsive img-centered" src="img/gallery/GithubTutorial/reposname.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/GithubTutorial/reposname.png" alt="">
                                 <p>Obviously you will fill in your own user name instead of 'nnandigam23'. You can initialize the repository with a README file, if you want. Click "Create repository".</p>
                                 <p>Now you should consider where you want your HTML, CSS, JS, etc. to be located. You will push these files from their location to Github. You can either have the files located locally on your computer, or store them on a cloud platform. For example, I keep all my web files on <a href="https://www.dropbox.com/home">Dropbox</a>. That way my website is not tied to my computer, instead it exists on the cloud. This could be useful if I were to lose my computer, or something happened to my hard drive. However, you are betting that Dropbox doesn't lose your files too. I recommend using a cloud-based storage application and keeping a recent copy of your work on a local machine as backup.</p>
                                 <h4>Using Git</h4>
@@ -1029,7 +708,7 @@
                                 <p>You can enter your message in between the quotation marks. So now we can push our code to the repository. To do this, type:</p>
                                 <pre>git push origin master</pre>
                                 <p>Once you enter this, you should be prompted for your username and password. Enter these in, and you should be good to go! Wait for the success message to display, and go check your repository to see your newly-added files.</p>
-                                <img class="img-responsive img-centered" src="img/gallery/GithubTutorial/repository.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/GithubTutorial/repository.png" alt="">
                                 <p>The moment you have been waiting for: viewing your website. To do this simply type in 'username.github.io' into your search box. Behold, your website. That's the address for your website, so go ahead and share it to everyone.</p>
                                 <h4>Making Changes to your Website</h4>
                                 <p>This is what makes GitHub ideal for implementing fixes. Simply edit your files in your username.github.io folder. Then in the terminal, once you've navigated to the folder, type:</p>
@@ -1040,7 +719,34 @@
 
                             </div>
                             <br>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Blog</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Portfolio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Portfolio Modal 10 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Davy Jones</h2>
+                            <p class="item-intro text-muted">Rent Tap</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/rent.png" alt="">
+                            <p>This is a prototype UI that I designed for a Rent Sharing app that we were considering making. This was done during MHacks (the Hackathon at Michigan). I used Sketch 3 to make these workflows.</p>
+                            <p>This app was designed to be a tool for roommates to easily organize paying for rent and other expenses. I made the layouts for 4 screens: the login page, the main profile page, the payment page, and the settings page. The profile page shows all the payments that must be made within "Apartment #304." The user can maintain several of these pages by simply swiping left or right. All the payment elements are in orange and all the charge elements are in blue.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -1063,7 +769,7 @@
                         <div class="modal-body" style="text-align:center">
                             <!-- Project Details Go Here -->
                             <h2>Colophon</h2>
-                            <p>This website was made using the <a href="http://startbootstrap.com/template-overviews/agency/">Agency theme</a>. The galley was made using open-source code from <a href="http://www.jssor.com/">Jssor Slider</a>. I highly suggest visiting these sites for themes and modules to embed into your code. If you believe that I have used your code/content and have not cited you, feel free to contact me and I will make the appropriate changes.</p>
+                            <p>This website was made using the <a href="http://startbootstrap.com/template-overviews/agency/">Agency theme</a>. The gallery was made using open-source code from <a href="http://www.jssor.com/">Jssor Slider</a>. I highly suggest visiting these sites for themes and modules to embed into your code. If you believe that I have used your code/content and have not cited you, feel free to contact me and I will make the appropriate changes.</p>
                             <br>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Colophon</button>
                         </div>
