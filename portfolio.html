@@ -2,441 +2,469 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nishal Nandigam's portfolio">
-    <meta name="author" content="Nishal Nandigam">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Box personal portfolio Template</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
 
-    <title>&lt;/nish&gt; | Portfolio</title>
-
-    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- custom css -->
+    <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
-<body id="page-top" class="index">
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" style="background: #222; padding: 10px">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html" style="font-family: montserrat"><strong>&lt;/nish&gt;</strong></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="index.html#about">Me</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="index.html#passions">Passions</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="index.html#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="index.html#blog">Blog</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-
-
-
-
-
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-black">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading" style="color: white">Portfolio</h2>
-                    <h3 class="section-subheading text-muted" style="color:#1d99d4">Come see what I do.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/GameOfThrones_preview.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Game Of Thrones</h4>
-                        <p class="text-muted">Drawing</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/IASA_flyers_preview.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>IASA Flyers</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/BSM_poster_preview.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Amway BSM Project</h4>
-                        <p class="text-muted">Presentation Poster</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/OCD_preview.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Amway OCD Redesign</h4>
-                        <p class="text-muted">IT Intern Project</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/DavyJones_preview.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Davy Jones - Pirates</h4>
-                        <p class="text-muted">Drawing</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/IASAMemberTeesPreview.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>IASA T-Shirt Design</h4>
-                        <p class="text-muted">Graphic Design</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <br>
-                    <a href="index.html#portfolio">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-remove"></i> Close Portfolio</button>
-                    </a>
-                </div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+        <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
+            </div>
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+        </header>
+        <!-- end box-header -->
+
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li class="box-label">About me</li>
+
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="portfolio.html">portfolio</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="contact.html">contact me</a></li>
+
+                <li class="box-label">Follow me</li>
+
+                <li class="box-social"><a href="https://www.facebook.com/nnandigam23" target="_blank"><i class="fab fa-facebook-square fa-sm"></i></a></li>
+                <li class="box-social"><a href="https://www.instagram.com/nnandigam23/" target="_blank"><i class="fab fa-instagram fa-sm"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/in/nishalnandigam" target="_blank"><i class="fab fa-linkedin fa-sm"></i></a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+    </div>
+
+    <!-- top bar -->
+    <div class="top-bar">
+        <h1>my portfolio</h1>
+        <p><a href="#">Home</a> / Portfolio</p>
+    </div>
+    <!-- end top bar -->
+
+    <!-- main container -->
+    <div class="main-container portfolio-inner clearfix">
+        <!-- portfolio div -->
+        <div class="portfolio-div">
+            <div class="portfolio">
+                <!-- portfolio_filter -->
+                <div class="categories-grid wow fadeInLeft">
+                    <nav class="categories text-center">
+                        <ul class="portfolio_filter">
+                            <li><a href="" class="active" data-filter="*">All</a></li>
+                            <li><a href="" data-filter=".UX">UX</a></li>
+                            <li><a href="" data-filter=".web">Web</a></li>
+                            <li><a href="" data-filter=".graphics">Graphics</a></li>
+                            <li><a href="" data-filter=".drawing">Drawing</a></li>
+                            <li><a href="" data-filter=".writing">Writing</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- portfolio_filter -->
+
+                <!-- portfolio_container -->
+                <div class="no-padding portfolio_container clearfix">
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6  UX">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/amazon_PT_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Progress Tracker</span>
+                                        <em>UX</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 UX">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/amazon_RPT_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Returns Progress Tracker</span>
+                                        <em>UX</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 UX">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/FTC_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Federal Trade Commission Consumer Tips</span>
+                                        <em>UX</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 graphics">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/heroes_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Heroes &amp; Villains</span>
+                                        <em>Graphics</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 UX">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/baby_blu_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Baby Blu Project</span>
+                                        <em>UX</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 UX">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/booksmart_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>BookSmart</span>
+                                        <em>UX</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 graphics">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/jhilmilaa_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Jhilmilaa</span>
+                                        <em>Graphics</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
 
 
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 drawing">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/GameOfThrones_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Game of Thrones</span>
+                                        <em>Drawing</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 graphics UX">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/320portfolio_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Portfolio Concept</span>
+                                        <em>Graphics</em>
+                                        <em>UX</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
 
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 web">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/BSM_Poster_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Global BSM Project</span>
+                                        <em>Web</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 web">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/u2h_web_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>U2H Web Design</span>
+                                        <em>Web</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 graphics">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/Nishal_logo_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>My logo</span>
+                                        <em>Graphics</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 writing">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/exp_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Experience Project Report</span>
+                                        <em>Writing</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 graphics">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/Manzil_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Michigan Manzil Logo</span>
+                                        <em>Graphics</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 drawing">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/pirates_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Pirates of the Caribbean</span>
+                                        <em>Drawing</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 UX">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/rent_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Rent Tap</span>
+                                        <em>UX</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 graphics">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/IASA_flyers_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>IASA Flyers</span>
+                                        <em>Graphics</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 UX">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/amway_OCD_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Amway Directory Redesign</span>
+                                        <em>UX</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 writing">
+                        <a href="single-project.html" class="portfolio_item">
+                            <img src="img/portfolio/twitter_preview.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Twitter Case Study</span>
+                                        <em>Writing</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    
+                </div>
+                <!-- end portfolio_container -->
+            </div>
+            <!-- portfolio -->
+        </div>
+        <!-- end portfolio div -->
+    </div>
+    <!-- end main container -->
+
+
+    <!-- footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; NISH 2015</span>
+                    <span class="copyright">Copyright &copy; NISH 2018</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="https://twitter.com/nnandigam23" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <li><a href="https://www.facebook.com/nnandigam23" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         </li>
-                        <li><a href="https://instagram.com/nnandigam23/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <li><a href="https://instagram.com/nnandigam23/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
-                        <li><a href="https://www.linkedin.com/pub/nishal-nandigam/ab/523/35a" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/nnandigam23" target="_blank"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://github.com/nnandigam23" target="_blank"><i class="fa fa-github"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#colophon" data-toggle="modal">Colophon</a>
+                        <li><a href="https://www.linkedin.com/pub/nishal-nandigam/ab/523/35a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- end footer -->
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Game Of Thrones</h2>
-                            <p class="item-intro text-muted">Drawing of Eddard Stark from Season One poster.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/GameOfThrones.png" alt="Ned Stark">
-                            <p>A drawing that I made of Ned Stark from Game of Thrones. I always thought this poster was one of the best, and I had a great time drawing it. The swords on the Iron Throne were a little tedious, but it turned out pretty good. I love the world that this story is set in, so I might try sketching other characters as well.</p>
-
-                            <ul class="list-inline">
-                                <li><strong>Date:</strong> July 14 2015</li>
-
-                                <li><strong>Category:</strong> Drawing</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>IASA Flyers</h2>
-                            <p class="item-intro text-muted">Flyers made as IASA Marketing Chair</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/IASA_flyers.png" alt="IASA flyers">
-                            <p>As Marketing Chair for the University of Michigan Indian American Student Association, I create flyers and graphics for events and social media. Photoshop was used to make these images.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Business Support Materials</h2>
-                            <p class="item-intro text-muted">Poster for Reverse Career Fair</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/BSM_Poster.png" alt="">
-                            <p>This is a poster made for the Amway Intern Reverse Career Fair. I discussed the project that I was working on: Global Business Support Materials Website Enhancements (BSM). This web application allows Amway Business Owners (ABO) to store their materials in a central database. This allows for easy access for each ABO and the Global BSM department at Amway. My role was the software tester, making sure the functionality of the website was intact and fit the requirements set by the Business Systems Analyst. I do this by writing test cases, executing them, and then reporting any bugs to the developer.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Amway Online Corporate Directory Redesign</h2>
-                            <p class="item-intro text-muted">Intern Project</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/OCD.png" alt="">
-                            <p>This was a project for all the IT interns at Amway. Our project was to redesign the current Online Corporate Directory (OCD). To do this we split into 3 teams: Interview team, Design team, and Development team. I was a member of both the Design and Development team. We worked using Agile processes in which we had many iterations of our design and prototype.</p>
-                            <p>As a member of the Design team, I took the information gathered through the interviews and surveys conducted by the Interview team, and made an initial mockup of the new website. The old OCD was notorious for having too many field and small text, so we trimmed down the intitial fields to the most commonly used. We also created an 'advanced search' button to hide all the rarely used search fields. We changed the overall look of the OCD to make it more similar to the current Amway Intranet. We changed the size of the fields and buttons to make it easier to use. The emphasis on the color red changed to shades of blue. We also added a picture of the Amway Grand Plaza in downtown Grand Rapids to add to the Amway spirit and culture. I used Adobe Photoshop to make the many iterations of the mock-up.</p>
-                            <p>As a member of the Development team, we implemented the design of the mock-up. My role was as a front-end developer. I mainly worked with HTML, CSS, and Bootstrap 3. Bootstrap helped to make our website responsive and mobile friendly. I would recieve basic html from the back-end developer and basically make it look pretty. Since we had only one virtual machine to run our code, we had to work in sessions, using lean techniques like partner programming.</p>
-                            <p>Overall, I learned a lot about the Agile design process and about web development. Our prototype is currently being moved into production (which I'm really proud of) and will be taken over by Amway employees after the interns leave this summer.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Davy Jones</h2>
-                            <p class="item-intro text-muted">Drawing of Pirates of the Caribbean</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/DavyJones.png" alt="">
-                            <p>This is a drawing of Davy Jones from the Pirates of the Caribbean series. I drew this a long time ago, but I really enjoyed it. So now it's on here.</p>
-                            <ul class="list-inline">
-                                <li><strong>Date:</strong> May 8 2010</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>IASA Membership T-Shirt</h2>
-                            <p class="item-intro text-muted">T-Shirt Design</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/IASAMemberTees.png" alt="">
-                            <p>This is my design for the Indian American Student Association Membership Tees. This was made using Adobe Photoshop and Adobe Illustrator. I was given constraints such as limited number of colors and no gradients in order to reduce the cost of the shirts.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- colophon -->
-    <div class="modal" id="colophon" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body" style="text-align:center">
-                            <!-- Project Details Go Here -->
-                            <h2>Colophon</h2>
-                            <p>This website was made using the <a href="http://startbootstrap.com/template-overviews/agency/">Agency theme</a>. The gallery was made using open-source code from <a href="http://www.jssor.com/">Jssor Slider</a>. I highly suggest visiting these sites for themes and modules to embed into your code. If you believe that I have used your code/content and have not cited you, feel free to contact me and I will make the appropriate changes.</p>
-                            <br>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Colophon</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
 
 </body>
 
