@@ -37,7 +37,7 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
-    color: #999
+    color: #393939
 }
 
 .no-padding {
@@ -67,8 +67,16 @@ a {
     text-transform: uppercase;
 }
 
+.h-60 {
+    height: 60px
+}
+
 .h-30 {
     height: 30px
+}
+
+.h-20 {
+    height: 20px
 }
 
 .h-10 {
@@ -88,22 +96,45 @@ a {
     background-color: #f7f7f7;
 }
 
+.bg-dark-gray {
+    background-color: #333333;
+}
+
+blockquote {
+    margin: 1em 0;
+    padding: 0 0 0 1em;
+    border: 1px solid #ffbf00;
+    border-width: 0 0 0 2px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.v-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /* typography
 ==================================================*/
 
 h1 {
-    color: #393939;
+    color: #111111;
     font-size: 60px;
-    text-transform: uppercase;
 }
 
 h3 {
     color: #393939;
 }
 
+h4 {
+    color: #111111;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
 h5 {
-    color: #ffbf00;
+    color: #DAA520;
 }
 
 
@@ -430,7 +461,6 @@ h5 {
 ==================================================*/
 
 .box-intro {
-    text-align: center;
     display: table;
     height: 100vh;
     width: 100%;
@@ -443,7 +473,6 @@ h5 {
 
 .box-intro em {
     font-style: normal;
-    text-transform: uppercase
 }
 
 b i:last-child {
@@ -455,6 +484,11 @@ b i:last-child {
     text-transform: uppercase;
     color: #999;
     line-height: 1.7
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
 
@@ -536,7 +570,7 @@ b i:last-child {
 /* text rotate */
 
 .box-headline {
-    font-size: 130px;
+    font-size: 60px;
     line-height: 1.0;
 }
 
@@ -897,8 +931,8 @@ footer img {
 ==================================================*/
 
 .top-bar {
-    color: #333;
-    padding: 150px 0 150px;
+    color: #111111;
+    padding: 120px 0 120px;
     background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
     background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
     background-size: cover;
@@ -911,7 +945,7 @@ footer img {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #999;
+    color: #11111;
     line-height: 50px;
 }
 
@@ -1000,6 +1034,11 @@ ul.social-buttons li a:active {
 
 .size-50 {
     font-size: 50px;
+}
+
+.size-30 {
+    font-size: 30px;
+    color: #555
 }
 
 .service-box {
