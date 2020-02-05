@@ -129,6 +129,33 @@ caption-text {
   transform: translateY(-50%);
 }
 
+.box {
+    display: flex;
+    align-items:center;
+    padding-bottom: 40px;
+}
+
+.box h3 {
+    color: #393939;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.box h4 {
+    color: #999999;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 /* typography
 ==================================================*/
 
@@ -870,12 +897,20 @@ b i:last-child {
     margin-bottom: 50px;
 }
 
+.portfolio_filter .see-all{
+    padding: 0 10px;
+    cursor: pointer;
+    color: #60606e;
+}
+
 .portfolio-inner {
     padding-bottom: 0 !important;
     padding-top: 55px;
 }
 
-
+.portfolio-gallery:hover {
+    opacity: 0.6;
+}
 /* footer
 ==================================================*/
 
