@@ -1,7 +1,8 @@
 var correct = 1;
 
 function overlay_off() {
-  document.getElementById("overlay").style.display = "none";
+    document.getElementById("inputPSWD").blur();
+    document.getElementById("overlay").style.display = "none";
 }
 
 
