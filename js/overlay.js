@@ -2,7 +2,7 @@ var correct = 1;
 
 function overlay_off() {
     document.getElementById("inputPSWD").blur();
-    document.getElementById("overlay").style.display = "none";
+    setTimeout(function oberlay() {document.getElementById("overlay").style.display = "none";}, 500);
 }
 
 
