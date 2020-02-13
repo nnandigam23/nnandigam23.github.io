@@ -24,6 +24,9 @@
     <!-- modernizr -->
     <script src="../js/modernizr.js"></script>
     
+    <!--overlay-->
+    <script src="../js/overlay.js"></script>
+    
     <!--preview-->
     <meta property="og:title" content="Device & Digital Help Gateway">
     <meta property="og:image" content="../img/portfolio/D2Gateway/intro.png">
@@ -78,6 +81,29 @@
         <!-- end nav -->
     </div>
     
+    <!-- overlay -->
+    <div id="overlay">
+        <div id="input" class="container main-container">
+            <div class="col-md-6 col-centered" id="text">
+                <div class="col-md-12">
+                    <h4>Looks like this is some confidential content...</h4>
+                    <h4>Do you know the password?</h4>
+                    <div class="h-20"></div>
+                    <form onsubmit="event.preventDefault(); passWord();" autocomplete="off">
+                        <div class="input-contact" id="inputContact">
+                            <input type="text" id="inputPSWD" onkeydown="backToNormal(event)" required>
+                            <span>Password</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-6">
+                    <button type="submit" onclick="passWord()" id="submitPSWD" class="btn btn-box">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
     
     <!-- main-container -->
     <div class="container main-container">
@@ -95,7 +121,7 @@
         <div class="col-md-9">
             <h4>Reinventing a stagnating platform.</h4>
 
-            <p>Message Us (MU) is a customer service chatbot platform aimed at decreasing the amount of customer contacts handled by humans, by providing automation from a bot. This platform was first launched in Q4 of 2016, after a 6-month research and design effort. This first version of this product was designed and optimized for mobile, as no existing chat functionality was present at the time. Since then, the team has focused on bringing more workflows and automation into the platform.</p>
+            <p>Message Us (MU) is a customer service chatbot platform aimed at decreasing the amount of customer contacts handled by humans. This platform was first launched in Q4 of 2016, after a 6-month research and design effort. The first version of this product was designed and optimized for mobile, as no existing chat functionality was present at the time. Since then, the team has solely focused on bringing more workflows and automation into the platform.</p>
             
             <p>Now, MU faces a new set of challenges. Research done on both the desktop and mobile experiences highlight gaps in regards to customers’ perception of the platforms, effort required, and its limited interactions. With a restricted UI library and interaction patterns, the chat platform is at risk of stagnating, and failing to engage customers. Iterating on the depth and breadth of workflows will achieve less than expected results, unless we improve upon the growth-limiting factors of engagement and delight.</p>
             
@@ -118,7 +144,7 @@
             <div class="h-60"></div>
             <h4>Design Brief</h4>
             
-            <p>In order for my managers and stakeholders to allow me the time and space to embark on this effort, I created a design brief that explained my reasoning and defined the scope of the project. This project would focus on how we could perform distinct iterations on the designs in order to make the product more engagement and delightful.</p>
+            <p>In order for my managers and stakeholders to allow me the time and space to embark on this effort, I created a design brief that explained my reasoning for this project and defined the scope. This project would focus on how we could perform distinct iterations on the designs in order to make the product more engagement and delightful.</p>
             <div class="h-30"></div>
         </div>
         
@@ -138,7 +164,7 @@
             <div class="h-60"></div>
             <h4>Discovery</h4>
             
-            <p>Some upfront work was needed to understand the opportunity space. I interviewed all the MU stakeholders to understand what experience-related problems are causing them issues in their work. I also looked at the research reports from past MU Baseline studies to gather customer painpoints. From these, I then compiled these notes on sticky-notes and affinitized them into themes.</p>
+            <p>Some upfront work was needed to understand the opportunity space. I interviewed all the MU stakeholders to understand what experience-related problems are causing them issues in their work. I also looked at the research reports from past MU Baseline studies to gather customer painpoints. From these, I then compiled notes and affinitized them into themes.</p>
             
             <p>I then looked at other chatbots from competitors to understand what aspects worked well for them. Again I compiled these findings and affinitized them into themes.</p>
             <div class="h-30"></div>
@@ -191,7 +217,7 @@
                 <ul class="cat-ul">
                     <li>&#9679; &nbsp;Customer perception</li>
                     <div class="h-10"></div>
-                    <li>&#9679; &nbsp;One-way navigationt</li>
+                    <li>&#9679; &nbsp;One-way navigation</li>
                     <div class="h-10"></div>
                     <li>&#9679; &nbsp;Bot’s lack of understanding text input</li>
                     <div class="h-10"></div>
@@ -204,7 +230,7 @@
             <div class="h-30"></div>
             <div class="h-60"></div>
             <h4>Defining the area of opportunity</h4>
-            <p>With months spent gaining the foundational work to understand the product and the chatbot space, I now was able to define exactly what areas we would be exploring in MU V2. With each area, I also defined the driving questions and open questions that would have to be answered through this effort.</p>
+            <p>With months spent gaining the foundational understanding of the product and chatbot space, I now was able to define exactly what areas we would be exploring in MU V2. With each area, I also defined the driving questions and open questions that would have to be answered through this effort.</p>
             <p>The focuses would be on <em>Interactions</em>, <em>Visuals</em>, and <em>Branding</em>.</p>
             <div class="h-30"></div>
         </div>
@@ -243,7 +269,7 @@
             <div class="h-30"></div>
             <div class="h-60"></div>
             <h4>Ideation</h4>
-            <p>Now is the fun part. With the broad areas defined, and specific opportunities in each area, I could go create and document my design ideas.</p>
+            <p>Now's the fun part. With the broad areas defined, and specific opportunities in each area, I could go create and document my design ideas.</p>
             <div class="h-30"></div>
         </div>
         
@@ -258,14 +284,14 @@
         
         <div class="col-md-9">
             <div class="h-30"></div>
-            <p>In order to get some additional feedback, we reviewed the design ideas with our Director. We currently have a two separate products in our space—one conversational (MU), and one GUI-based (Foresight)—that solve customer issues. Our Director had called into question why we don’t just combine the two products, because the ideation had visualized how conversational and GUI interfaces could interact seamlessly. While this question wasn’t in scope for our MU V2 project, it was something that we would have to tackle the following year.</p>
+            <p>In order to get some additional feedback, we reviewed the design ideas with our Director. We currently have two separate products in our space&mdash;one conversational (MU), and one GUI-based (Foresight)&mdash;that solve customer issues. Upon seeing my explorations, our Director questioned why we don’t just combine the two products. This was because many of the ideas had visualized how conversational and GUI interfaces could interact seamlessly. While this question wasn’t in scope for our MU V2 project, it was something that we would have to tackle in the following year.</p>
         </div>
         
         <div class="col-md-9">
             <div class="h-30"></div>
             <div class="h-60"></div>
             <h4>Design Concepts</h4>
-            <p>After we were done ideating we started the compiling the ideas and split them up into 2 concepts:</p>
+            <p>After we were done exploring we started grouping the ideas and organizing them into 2 concepts:</p>
         </div>
         
         <div class="col-md-9">
@@ -330,9 +356,14 @@
             <a href="../img/portfolio/MUV2/alternative-controls.png" data-lightbox="muv2" data-title="Alternative controls"><img src="../img/portfolio/MUV2/alternative-controls.png" alt="" class="img-responsive" /></a>
         </div>
         
+        <div class="col-md-3">
+            <div class="h-30"></div>
+            <blockquote>Examples of the ideas that tested well with customers</blockquote>
+        </div>
+        
         <div class="col-md-9">
             <div class="h-30"></div>
-            <p>We learned that customers didn’t prefer one concept over the other, but rather certain elements over others. Thus, the ideal solution would be a bot-identity that uses a dynamic workspace to handhold customer’s to the right solution.</p>
+            <p>We learned that customers didn’t prefer one concept over the other, but rather certain elements over others. Thus, the ideal solution would be a bot-identity that uses a dynamic workspace to handhold customers to the right solution.</p>
             <div class="h-30"></div>
         </div>
         
@@ -351,7 +382,7 @@
             <div class="h-30"></div>
             <div class="h-60"></div>
             <h4>Review</h4>
-            <p>After reviewing these finding with stakeholders, we decided to move forward with the components that tested well. I also worked with engineering and PM partners to assess feasibility and move certain components to the roadmap. There will have to be additional design iterations and research to get some ideas past the finish line, but the MU v2 effort opened our eyes to the possibilities of the platform.</p>
+            <p>After reviewing these finding with stakeholders, we decided to move forward with the components that tested well. I also worked with engineering and PM partners to assess feasibility and move certain components to the roadmap. There will have to be additional design iterations and research to get some ideas past the finish line, but the MU v2 effort opened our eyes to the possibilities of an engaging and delightful chatbot platform.</p>
         </div>
         
         <div class="col-md-9">
