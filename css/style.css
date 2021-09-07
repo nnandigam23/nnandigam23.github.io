@@ -27,7 +27,7 @@
 /* Google fonts & font family
 ==================================================*/
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700);
 
 
 
@@ -180,6 +180,33 @@ caption-text {
     border: 1px solid #E8E8E8;
 }
 
+.overview-box {
+    border-radius: 6px;
+    border: 1px solid #E8E8E8;
+    padding: 30px;
+}
+
+.overview-box h3 {
+    color: #393939;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.overview-box p {
+    color: #393939;
+    font-size: 16px;
+    font-weight: 200px;
+    text-align: center;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  border: 3px solid #ffbf00;
+  padding: 10px;
+}
+
 /* typography
 ==================================================*/
 
@@ -190,12 +217,14 @@ h1 {
 
 h3 {
     color: #393939;
+    font-weight: 500px;
+    font-size: 36px;
 }
 
 h4 {
     color: #111111;
-    text-transform: uppercase;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 h5 {
@@ -1288,21 +1317,19 @@ textarea:focus {
 }
 
 .btn-box {
-    background: #ffbf00;
+    background: none;
     padding: 10px 50px;
-    border-radius: 0;
-    color: #fff !important;
+    border-radius: 45px;
+    border:3px solid #515151;
+    color: #515151 !important;
     margin-top: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none !important;
 }
 
 .btn-box:hover,
 .btn-box:focus {
     background: #F5B700;
-    color: #fff;
 }
 
 
