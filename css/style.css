@@ -124,6 +124,10 @@ a.alternative:hover {
     background-color: #f7f7f7;
 }
 
+.bg-bone {
+    background-color: #f1efe3;
+}
+
 .bg-dark-gray {
     background-color: #333333;
 }
