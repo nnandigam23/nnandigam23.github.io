@@ -1005,6 +1005,11 @@ b i:last-child {
     margin-right: 10px;
 }
 
+.portfolio-item-box img{
+    border-radius: 6px 6px 0px 0px;
+}
+
+
 .portfolio-item-box strong{
     margin-left: 10px;
     margin-right: 10px;
