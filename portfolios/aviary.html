@@ -39,13 +39,12 @@
     <!-- feather icons -->
     <link href="feather/feather.css" rel="stylesheet" type="text/css">
     
-    <!-- password -->
-    <script src="../js/overlay.js"></script>
 
     <!-- modernizr -->
     <script src="../js/modernizr.js"></script>
     
-    
+       <!-- password -->
+    <script src="../js/overlay.js"></script>
     
     
     <!--preview-->
@@ -102,6 +101,35 @@
         </nav>
         <!-- end nav -->
     </div>
+    
+    
+    <div id="overlay">
+        <div id="input" class="container main-container">
+            <div class="col-md-6 col-centered" id="text">
+                <div class="col-md-12">
+                    <h4>Looks like this is some confidential content...</h4>
+                    <h4>Do you know the password?</h4>
+                    <div class="h-20"></div>
+                    <form onsubmit="event.preventDefault(); passWord();" autocomplete="off">
+                        <div class="input-contact" id="inputContact">
+                            <input type="text" id="inputPSWD" onkeydown="backToNormal(event)" required>
+                            <span>Password</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-6">
+                    <button type="submit" onclick="passWord()" id="submitPSWD" class="btn btn-box">Submit</button>
+                </div>
+                
+                <div class="col-xs-6">
+                    <div class="h-30"></div>
+                    <span class="pull-right"><p><a class="alternative" href="../contact.html">Contact me</a></p></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
     
     
     <!-- main-container -->
