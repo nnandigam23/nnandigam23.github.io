@@ -8,7 +8,7 @@ function overlay_off() {
 
 function passWord() {
     var inputPSWD = document.getElementById('inputPSWD').value;
-    var myPSWD = "amazon";
+    var myPSWD = "nishal2021";
     if (inputPSWD === myPSWD){
         overlay_off();
     }
