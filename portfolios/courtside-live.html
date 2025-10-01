@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Courtside Live</title>
+   
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#F6F6F6">
+    <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#F6F6F6">
+    
+    <!-- Lightbox -->
+    <link href="../lightbox/css/lightbox.css" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
+    
+    <!-- main css -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- feather icons -->
+    <link href="feather/feather.css" rel="stylesheet" type="text/css">
+    
+
+    <!-- modernizr -->
+    <script src="../js/modernizr.js"></script>
+    
+    <!-- password -->
+    <script src="../js/overlay.js"></script>
+    
+    
+    <!--preview-->
+    <meta property="og:title" content="Aviary">
+    <meta property="og:image" content="../img/portfolio/courtside-live/intro.png">
+    <meta property="og:description" content="Nishal Nandigam's portfolio">
+    <meta property="og:url" content="https://nishal.design/courtside-live.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid" style="padding-bottom:40px">
+       <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="https://nishal.design/"><img src="../img/logo.svg" width="140" alt="Logo"></a>
+            </div>
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
+        
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li><a href="https://nishal.design/">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../instagram.html">Instagram</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../contact.html">Contact </a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+    </div>
+    
+    
+    <div id="overlay">
+        <div id="input" class="container main-container">
+            <div class="col-md-6 col-centered" id="text">
+                <div class="col-md-12">
+                    <h4>Looks like this is some confidential content...</h4>
+                    <h4>Do you know the password?</h4>
+                    <div class="h-20"></div>
+                    <form onsubmit="event.preventDefault(); passWord();" autocomplete="off">
+                        <div class="input-contact" id="inputContact">
+                            <input type="text" id="inputPSWD" onkeydown="backToNormal(event)" required>
+                            <span>Password</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-6">
+                    <button type="submit" onclick="passWord()" id="submitPSWD" class="btn btn-box">Submit</button>
+                </div>
+                
+                <div class="col-xs-6">
+                    <div class="h-30"></div>
+                    <span class="pull-right"><p><a class="alternative" href="../contact.html">Contact me</a></p></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- main-container -->
+    <div class="container main-container">
+        <div class="col-md-12">
+            <img src="../img/portfolio/courtside-live/intro.png" alt="" class="img-responsive cover-img" />
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-12">
+            <h3>Courtside Live</h3>
+            <h5>Peacock, 2025</h5>
+            <div class="h-30"></div>
+        </div>
+        
+        <div class="col-md-12 overview-box">
+            
+            <div class="col-md-4">
+                <h3>Role</h3>
+                <p>Principal Product Designer<br/>Product + Design Lead</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Team</h3>
+                <p>Content Discovery</p>
+            </div>
+            <div class="col-md-4 center">
+                <h3>Status</h3>
+                <p>Launching in Q1 2026</p>
+            </div>
+        </div>
+        
+        <div class="col-md-12">
+            <div class="h-60"></div>
+        </div>
+
+        <div class="col-md-9">
+            <h4>Sit courtside without ever leaving the couch.</h4>
+
+            <p>The NBA is coming to Peacock in 2025, and brings with it a much younger and diverse audience to the platform. In order to capitalize on this new audience, we need to buld features that entertain both the avid and casual fan.</p>
+
+            <p>Courtside Live gives the user control on how they watch the game&mdash;with immersive courtside views to the action and VIP access to the stars.</p>
+            
+            <p>I led defining and designing this 0→1 project in a short timeline.</p>
+            <div class="h-20"></div>
+            
+        </div>
+        
+        <div class="col-md-9">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/slides/xaS468tg3Y3xmdxMyQk4Uf/Courtside-Live?node-id=6-116&embed-host=share" allowfullscreen></iframe>
+        </div>
+        
+       
+        
+    </div>
+    <!-- end main-container -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">© Box Portfolio 2016</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="../js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/animated-headline.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    
+    <!-- Lightbox js -->
+    <script src="../lightbox/js/lightbox.js"></script>
+
+    <!--  custom script -->
+    <script src="../js/custom.js"></script>
+
+</body>
+
+</html>
