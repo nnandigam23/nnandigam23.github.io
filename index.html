@@ -37,7 +37,7 @@
     <link href="css/style.css" rel="stylesheet">
     
     <!-- feather icons -->
-    <link href="feather/feather.css" rel="stylesheet" type="text/css">
+    <script src="feather/feather.js"></script>
 
     <!-- custom css -->
     <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
@@ -401,32 +401,37 @@
         <h2 class="center" style="padding-bottom:70px">How I can help you.</h2>
         <div class="clearfix">
             
-          
-            <div class="col-md-4 service-box">
-                <i class="feather-user-check icon-circle" style="font-size: 25px; color: #8C8C86;"></i>
+            <div class="col-md-4  service-box">
+                <i class="icon-circle">
+                    <i data-feather="edit"></i>
+                </i>    
                 <div class="h-10"></div>
-                <h4>UI/UX</h4>
+                <h4>Design Strategy</h4>
                 <div class="h-10"></div>
-                <p>From ideation to high-fidelity mockups, I create interactions and experiences rooted in design thinking and collaboration.</p>
+                <p>With experience leading 0→1 projects, my adaptive design process aligns user needs and business goals in order to deliver impact. </p>
             </div>
-            
-            
-           
+
             <div class="col-md-4 service-box">
-                <i class="feather-zap icon-circle" style="font-size: 25px; color: #8C8C86;"></i>
+                <i class="icon-circle">
+                    <i data-feather="layers"></i>
+                </i>  
+                <div class="h-10"></div>
+                <h4>Interaction & Visual Design</h4>
+                <div class="h-10"></div>
+                <p>From ideation to high-fidelity mockups, I create scalable interactions and innovative experiences rooted in empathy, collaboration, and data.</p>
+            </div>
+
+            <div class="col-md-4 service-box">
+                <i class="icon-circle">
+                    <i data-feather="zap"></i>
+                </i>  
                 <div class="h-10"></div>
                 <h4>Prototyping</h4>
                 <div class="h-10"></div>
                 <p>Using software such as Figma and After Effects, I build prototypes that showcase the nuances of every interaction.</p>
             </div>
            
-            <div class="col-md-4  service-box">
-                <i class="feather-image icon-circle" style="font-size: 25px; color: #8C8C86;"></i>
-                <div class="h-10"></div>
-                <h4>Visual Design</h4>
-                <div class="h-10"></div>
-                <p>With experience in Illustrator &amp; Photoshop, I create visuals that convey meaning and align with the brand.</p>
-            </div>
+            
             
         </div>
         <div class="clearfix center" style="padding-top:50px;">
@@ -434,7 +439,9 @@
         </div>
     </div>
     
-    
+    <script>
+        feather.replace();
+    </script>
     <!-- footer -->
     <footer>
         <div class="container-fluid">
