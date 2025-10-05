@@ -37,7 +37,7 @@
     <!-- custom css -->
     <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
     <!-- feather icons -->
-    <link href="feather/feather.css" rel="stylesheet" type="text/css">
+    <script src="feather/feather.js"></script>
 
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
@@ -137,7 +137,7 @@
                         </div>
                     </div>
                     <div class="col-xs-6">
-                        <button type="submit" class="btn btn-box">Send</button>
+                        <button type="submit" class="btn btn-box">Send<i data-feather="arrow-up-right" style="vertical-align: middle; margin-left: 4px;"></i></button>
                     </div>
                     <div class="col-xs-6">
                         <div class="h-30"></div>
@@ -147,6 +147,10 @@
             </form>
         </div>
     </div>
+
+    <script>
+        feather.replace();
+    </script>
     <!-- end main-container -->
 
     <!-- footer -->
